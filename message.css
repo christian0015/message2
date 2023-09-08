@@ -1,0 +1,368 @@
+/* ********************************Reset CSS********************************* */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    max-width: 1000px;
+    min-width: 280px;
+    background-color: rgb(238, 238, 238);
+    margin-bottom: 70px;
+}
+
+#navigation {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 30px;
+    bottom: 0vh;
+    background: rgb(255, 255, 255);
+    /* Fond semi-transparent pour atténuer le flou */
+    backdrop-filter: blur(30px);
+    padding: 15px 0px 15px 0px;
+    z-index: 10000;
+    overflow: hidden;
+    border: 0.001px solid;
+}
+
+.logoNavigation {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+.logoNavigation:hover {
+    border-radius: 20%;
+    background-color: rgb(204, 204, 204);
+    z-index: -10;
+}
+
+/* Styles pour masquer ou afficher les sections */
+.hidden {
+    display: none;
+}
+
+/* *****************************************************CSS Message************************************* */
+
+#messagesSection {
+    background-color: #fff;
+}
+
+.hautMessages {
+    padding: 10px;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+#discussion {
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 200%;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+}
+
+#inputSearchMessages,
+#inputSearchReglages,
+#inputSearchAppels {
+    background-color: rgb(240, 240, 240);
+    color: rgb(107, 107, 107);
+    width: 90%;
+    height: 30px;
+    font-size: 110%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: start;
+    padding: 10px 0px 10px 10px;
+}
+
+.userProfil {
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+    border-radius: 100%;
+}
+
+#userName {
+    font-size: 130%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#lastMessage {
+    font-size: 100%;
+}
+
+/* ********************************************* CSS REGLAGE************************************* */
+
+.hautReglages {
+    padding: 10px;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionReglage {
+    background-color: #fff;
+    padding: 12px;
+    margin: 10px 0 10px 0;
+    font-size: 130%;
+    width: 85%;
+    box-shadow: 0 5px 10px rgb(216, 216, 216);
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* *************************************************CSS Appels******************************************* */
+
+.hautAppels {
+    padding: 10px;
+}
+
+.chooseAppels {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    background-color: gray;
+    margin: 10px 0 10px 0;
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.typeAppels {
+    width: 100px;
+    height: 20px;
+    font-size: 110%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.typeAppels:hover {
+    background-color: #fff;
+}
+
+.timeAppels {
+    padding: 20px;
+}
+
+.sectionAppels {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.userCalling {
+    display: flex;
+    align-items: start;
+    padding: 10px 0px 10px 10px;
+}
+
+/* **************************************************CSS Publish************************************* */
+
+.sectionPublish {
+    padding: 20px;
+}
+
+.hautPublish {
+    padding: 10px;
+}
+
+/* ***************************************************CSS ACTUS************************************* */
+
+.hautActus {
+    padding: 10px;
+}
+
+.sectionActus {
+    display: flex;
+    justify-content: stretch;
+    align-self: center;
+    overflow-x: auto;
+    /* Activer la barre de défilement horizontale */
+    gap: 10px;
+    padding: 10px;
+}
+
+.classActus {
+    display: inline-block;
+    border: solid rgb(255, 139, 96);
+    padding: 15px;
+}
+
+.imageActus {
+    width: 270px;
+    margin-top: 10px;
+}
+
+.textActus {
+    font-size: 100%;
+    color: rgb(148, 148, 148);
+}
+
+.sectionActus2 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.classActus2 {
+    display: inline;
+    width: 95%;
+    border: 5px solid rgb(67, 165, 29);
+    padding: 5px;
+}
+
+.imageActus2 {
+    width: 95%;
+    margin: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* ***********************************************Close off******************************* */
+
+.hautMessages.no,
+#discussion.no,
+#navigation.no {
+    display: none;
+}
+
+.messagesZone.yes {
+    display: block;
+    background-image: url('fontWhatsApp.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-position: center;
+    margin: 50px 0px 50px 0px;
+    padding: 20px 0px 10px 0px;
+    height: 100vh;
+}
+
+.messagesZone {
+    display: none;
+}
+
+.hautmessagesZone {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    width: 100%;
+    height: 30px;
+    top: 0vh;
+    background: rgb(255, 255, 255);
+    /* Fond semi-transparent pour atténuer le flou */
+    backdrop-filter: blur(30px);
+    padding: 15px 0px 15px 0px;
+    z-index: 10000;
+    overflow: hidden;
+    border: 0.001px solid;
+}
+
+.bastmessagesZone {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 30px;
+    bottom: 0vh;
+    background: rgb(255, 255, 255);
+    /* Fond semi-transparent pour atténuer le flou */
+    backdrop-filter: blur(30px);
+    padding: 15px 0px 15px 0px;
+    z-index: 10000;
+    overflow: hidden;
+    border: 0.001px solid;
+
+}
+
+.retourButton {
+    margin-left: 10px;
+}
+
+#inputFile {
+    width: 30px;
+    height: 30px;
+    font-size: 110%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.inputText {
+    background-color: #eeeeee;
+    width: 60%;
+    height: 30px;
+    font-size: 110%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.messageInitial {
+    padding: 15px;
+    max-width: 80%;
+    min-width: 10%;
+    float: left;
+    margin: 10px 0 10px 10px;
+    background-color: rgb(255, 255, 255);
+    font-size: 150%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    font-family: monospace;
+
+}
+
+.message {
+    padding: 15px;
+    max-width: 80%;
+    min-width: 10%;
+    float: right;
+    margin: 10px 10px 10px;
+    background-color: rgb(172, 226, 85);
+    font-size: 150%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 30px;
+    font-family: monospace;
+
+}
