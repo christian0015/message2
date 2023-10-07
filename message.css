@@ -134,11 +134,22 @@ body {
     display: inline-block;
     border: solid rgb(255, 139, 96);
     padding: 15px;
+    border-radius: 12px;
+    background-color: rgb(10, 89, 121);
+    box-shadow: 0px 3px 5px #c5c5c5;
 }
 
 .imageActus {
-    width: 270px;
+    width: 200px;
     margin-top: 10px;
+}
+
+.imageActus00 {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 5px #c5c5c5;
 }
 
 .textActus {
