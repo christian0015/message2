@@ -37,7 +37,7 @@
                 <img src="image_actus13.jpg" alt="" class="imageActus00">
                 <img src="image_actus14.jpg" alt="" class="imageActus00">
                 <img src="image_actus15.jpg" alt="" class="imageActus00">
-                
+
             </div>
 
             <div class="sectionActus">
@@ -436,7 +436,7 @@
                         </div>
                     </div>
 
-                    <div class="sectionReglage">
+                    <div class="sectionReglage Compte">
                         <div class="sousSectionReglage"><img src="icon_key.png" alt="x-icon-ofreglage"
                                 class="iconOfReglage">
                             <div id="1">Compte</div>
@@ -504,7 +504,8 @@
                     <div class="sectionReglage">
                         <div class="sousSectionReglage">
                             <img src="inconnu.jpg" alt="" class="userProfil">
-                            <div style="line-height: 20px; font-size: 70%; color: rgb(75, 75, 75);">Saissisez votre nom et ajoutez une photo
+                            <div style="line-height: 20px; font-size: 70%; color: rgb(75, 75, 75);">Saissisez votre nom
+                                et ajoutez une photo
                                 de
                                 profile optionnelle</div>
                         </div>
@@ -537,6 +538,48 @@
                             style="font-size: 110%; font-family:monospace; width: 300px; padding: 10px; color:white; background-color: rgb(1, 1, 179); border-radius: 5px;">
                     </div>
 
+                </div>
+
+            </div>
+
+            <!-- **************************** Section Compte ****** -->
+
+
+            <div id="CompteProfile" class="CompteProfile" style="font-size: 130%; margin-left: 2px;">
+
+                <div id="retourButtonCompte"><img src="imageBack.png" alt="" width="30px"></div>
+
+
+                <div class="center">
+
+                    <div class="sectionReglage">
+                        <div class="sousSectionReglage">
+                            <img src="inconnu.jpg" alt="" class="userProfil">
+                            <div style="line-height: 20px; font-size: 70%; color: rgb(43, 43, 43);">Christian0001</div>
+                        </div>
+
+                        <hr style="margin-left: 20px; margin-top: 7.5px;">
+                        <span style="font-size: 60%; border: solid 0.3px; padding: 3px;">@</span>
+                        <span style="font-size: 60%;">Christian</span>
+                        <span style="font-size: 60%;">Tukunda</span>
+                        <br>
+                        <span style="font-size: 60%; border: solid 0.3px; padding: 3px;">M</span>
+                        <span style="font-size: 60%;">christiantukundastocklin@gmail.com</span>
+
+                        <hr style="margin-left: 20px; margin-top: 7.5px; margin-bottom: 10px;">
+
+                    </div>
+                    <span style="font-size: 70%; color: chocolate;">NUMERO DE TELEPHONE</span>
+                    <div class="sectionReglage">
+                        <span style="font-size: 75%;">+33 111-222222</span>
+                        <hr style="margin-left: 20px; margin-top: 7.5px;">
+                    </div>
+                    <span style="font-size: 70%; color: chocolate;">BIO</span>
+                    <div class="sectionReglage">
+                        <span style="font-size: 75%;">Vous n'avez aucune bio</span>
+                        <hr style="margin-left: 20px; margin-top: 7.5px;">
+                    </div>
+                    <a href="#messagesSection">Link</a>
                 </div>
 
             </div>
@@ -721,6 +764,28 @@
             }
         });
     </script>
+
+    <script>
+        const sectionOfCompte = document.getElementById('sectionOfReglage');
+        const sectionCompte = document.querySelector('.CompteProfile');
+        const Compte = document.querySelector('.Compte');
+        const retourButtonCompte = document.getElementById('retourButtonCompte');
+        sectionCompte.style.display = 'none'
+        sectionOfCompte.style.display = 'block'
+        function AffCompte() {
+            sectionCompte.style.display = 'block';
+            sectionOfCompte.style.display = 'none';
+        }
+
+        function CloseCompte() {
+            sectionCompte.style.display = 'none';
+            sectionOfCompte.style.display = 'block';
+        }
+        Compte.addEventListener('click', AffCompte);
+        retourButtonCompte.addEventListener('click', CloseCompte);
+    </script>
+
+    <script>scriptUser.js</script>
 
     <script>
         const sectionOfReglage = document.getElementById('sectionOfReglage');
